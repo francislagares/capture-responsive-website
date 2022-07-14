@@ -2,6 +2,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Hero from 'src/components/Hero';
 
+import Slider from '../components/Slider';
+import { SliderData } from '../components/Slider/data';
+
 const Home: NextPage = () => (
   <div>
     <Head>
@@ -13,6 +16,7 @@ const Home: NextPage = () => (
       heading='Captur Photography'
       message='I capture moments in nature and keep them alive.'
     />
+    <Slider slides={SliderData} />
   </div>
 );
 
