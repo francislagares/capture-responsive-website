@@ -44,7 +44,13 @@
     "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
     "react/prop-types": ["off"],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
-    "import/extensions": ["error", "never"],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "jpeg": "never"
+      }
+    ],
     "import/prefer-default-export": 0,
     "import/no-anonymous-default-export": 0,
     "import/no-unresolved": 2,

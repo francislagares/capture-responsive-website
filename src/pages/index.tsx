@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Hero from 'src/components/Hero';
 
+import Instagram from '../components/Instagram';
 import Slider from '../components/Slider';
 import { SliderData } from '../components/Slider/data';
 
@@ -17,6 +18,7 @@ const Home: NextPage = () => (
       message='I capture moments in nature and keep them alive.'
     />
     <Slider slides={SliderData} />
+    <Instagram />
   </div>
 );
 
