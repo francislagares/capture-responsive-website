@@ -14,7 +14,7 @@
     "stylelint": "stylelint **/*.{css,scss,tsx,js} --fix",
     "test": "jest --watch",
     "test:ci": "jest --verbose",
-    "cypress:open": "env-cmd -f .env.test.local cypress open",
+    "cypress:open": "cypress open",
     "cypress:start": "start-server-and-test 'yarn start:test' 3000 'yarn cypress:open'",
     "cypress:build": "yarn build:test && yarn cypress:start",
     "cypress:run:chrome": "start-server-and-test 'yarn start:test' 3000 'env-cmd -f .env.test.local cypress run --browser chrome'",
